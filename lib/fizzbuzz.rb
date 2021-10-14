@@ -1,17 +1,14 @@
-
-
-  n = 1
-while n <= 20 do
-  if n % 3 == 0 && n % 5 == 0
-    puts 'FizzBuzz'
-  elsif n % 3 == 0
-    puts "Fizz"
-  elsif n % 5 == 0
-    puts 'Buzz'
+def fizzbuzz(number)
+  if (number % 3 == 0) && (number % 5) == 0
+    return 'fizzbuzz'
+  elsif number % 3 == 0
+    return 'fizz'
+  elsif number % 5 == 0
+    return 'buzz'
   else
-    puts n
-  end 
-  n += 1
+    return number
+  end
 end
+
 
 
